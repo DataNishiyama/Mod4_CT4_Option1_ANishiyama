@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.mod4ct_anishiyama.HelloController">
+    <top>
+        <MenuBar>
+            <Menu mnemonicParsing="false" text="Menu">
+                <MenuItem mnemonicParsing="false" text="Print Date and Time" onAction="#onDateMenuItemClicked"/>
+                <MenuItem mnemonicParsing="false" text="Output to log.txt" onAction="#onWriteToFileMenuItemClicked"/>
+                <MenuItem mnemonicParsing="false" text="Change Background Color" onAction="#onChangeColorMenuItemClicked"/>
+                <MenuItem mnemonicParsing="false" text="Exit" onAction="#onExitMenuItemClicked"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <TextArea fx:id="outputTextArea" maxHeight="200.0" maxWidth="400.0"/>
+    </center>
+</BorderPane>
